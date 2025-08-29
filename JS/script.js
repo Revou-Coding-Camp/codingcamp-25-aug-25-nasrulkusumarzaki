@@ -21,3 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
     form.reset();
   });
 });
+
+function scrollGallery(direction) {
+  const row = document.getElementById("galleryRow");
+  const scrollAmount = 320; // lebar 1 item + gap
+  row.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
