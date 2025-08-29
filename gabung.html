@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Massage</title>
+  <link rel="stylesheet" href="CSS/style.css"/>
+  <style>
+    /* Styling output */
+    .output-container {
+      max-width: 500px;
+      margin: 30px auto;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .output-container h4 {
+      margin-top: 0;
+      color: #007BFF;
+    }
+    .output-container p {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <div class="logo">
+                <img src="logo sumber maju.jpg" alt="logo klub sumber maju" width="5%" height="5%">
+        </div>
+    <h1>Sumber Maju Badminton Club</h1>
+    <p>Raih Prestasi Bersama Kami</p>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="pesan">
+    <h2>Hubungi Kami</h2>
+
+    <div class="form-pesan card">
+      <h3>Kirim Pesan</h3>
+      <form id="formPesan">
+        <input type="text" name="name" id="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" id="email" placeholder="Email Anda" required>
+        <textarea name="message" id="message" rows="5" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+    <div class="info-kontak card">
+      <h3>Contact Us</h3>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pb_sumbermaju" target="_blank">@pb_sumbermaju</a></p>
+      <p><strong>Telepon:</strong> +62 85 943 730 983</p>
+      <p><strong>Alamat:</strong> Nglawak, Bedahlawak, Kec. Tembelang, Kab. Jombang</p>
+    </div>
+
+    <div class="output-container" id="output" style="display:none;">
+      <h4>Pesan Anda:</h4>
+      <p><strong>Nama:</strong> <span id="outputName"></span></p>
+      <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+      <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sumber Maju Badminton Club. All rights reserved.</p>
+  </footer>
+
+  <!-- Panggil file JS eksternal -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
