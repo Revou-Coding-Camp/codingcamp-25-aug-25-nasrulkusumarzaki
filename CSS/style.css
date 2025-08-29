@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
-header {
-    background: url("gambar/kartun/badminton.jpeg") ;
+body {
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    background:url("background/gambar\ kartun\ badminton.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(254, 0, 0);
+    scroll-behavior: smooth;
 }
