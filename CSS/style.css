@@ -7,11 +7,58 @@
 body {
     margin: 0%;
     font-family: Arial, sans-serif;
-    background:url("background/gambar\ kartun\ badminton.jpeg");
+    background:url("background/latar\ belakang\ badminton.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(254, 0, 0);
+    color: rgb(0, 0, 0);
     scroll-behavior: smooth;
+}
+
+header {
+    background: #1e293b;
+    padding: 15px 30pxs;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links li a:hover {
+    color: aquamarine;
+    background-color: rgb(3, 3, 3);
+    border-radius: 5px;
+    padding: 10px;
+
 }
