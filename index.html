@@ -32,43 +32,69 @@
 
     <!-- About -->
     <section id="about" class="about-section">
-       <h2>Tentang Kami</h2>
-        <p>Sumber Maju Badminton Club berdiri sejak tahun 2020 di Jombang. Kami berkomitmen untuk melatih dan membina atlet muda agar mampu bersaing di tingkat daerah, provinsi, hingga nasional </p>
-        <h3>Visi</h3>
-        <p>Menjadi klub bulutangkis unggulan yang melahirkan atlet ptofesional. berpretasi di tingkat nasional maupun internasional, serta membangun generasi muda yang disiplin, sehat, dan berkarakter</p>
-        <h3>Misi</h3>
-        <ul>
-            <li>Menyelenggarakan latihan rutin dengan metode modern dan program yang terstruktur</li>
-            <li>Menciptakan budaya disiplin, sportivitas, dan kerja keras</li>
-            <li>Mengikuti berbagai turnament untuk meningkatkan pengalaman atlet</li>
-        </ul>
-    </section>
+    <h2>Tentang Kami</h2>
+    <p>
+      Sumber Maju Badminton Club berdiri sejak tahun 2020 di Jombang. 
+      Sejak awal berdiri, kami berkomitmen untuk menjadi wadah pembinaan 
+      bagi generasi muda yang memiliki semangat, bakat, dan minat di bidang bulutangkis.
+    </p>
+    <p>
+      Dengan dukungan pelatih berpengalaman dan program latihan yang terarah, 
+      kami berupaya melahirkan atlet-atlet potensial yang mampu bersaing di tingkat daerah, 
+      provinsi, bahkan nasional.
+    </p>
+    <ul class="about-list">
+      <li>Program latihan intensif & terarah</li>
+      <li>Pelatih berpengalaman & profesional</li>
+      <li>Fasilitas latihan lengkap & nyaman</li>
+      <li>Mengutamakan sportivitas & kebersamaan</li>
+    </ul>
+<div class="visi-Misi">
+  <h3>Visi & Misi</h3>
+  <p><b>Visi:</b> Menjadi klub bulutangkis terbaik di Jombang yang melahirkan atlet berprestasi nasional.</p>
+    <p><b>Misi:</b></p>
+  <ul>
+    <li>Mengembangkan potensi atlet melalui pembinaan terarah.</li>
+    <li>Mengutamakan sportivitas dan kerja sama tim.</li>
+    <li>Membangun komunitas bulutangkis yang solid dan profesional.</li>
+  </ul>
+</div>
+</section>
 
-    <!-- Gallery -->
+  <!-- Gallery -->
 <section id="gallery">
-  <h2>Galeri Kegiatan Sparing</h2>
+  <h2>Galeri Kegiatan Sparing:</h2>
   <div class="gallery-row">
     <div class="gallery-item">
-      <img src="gambar sumber maju vs afandai jaya.jpg" alt="Sumber Maju vs Afandi Jaya">
+      <img src="gambar sumber maju vs afandai jaya.jpg" alt="Sumber Maju vs Afandi Jaya" onclick="openLightbox(this)">
       <p>PB Sumber Maju vs PB Afandi Jaya</p>
     </div>
     <div class="gallery-item">
-      <img src="gambar sumber maju vs new kampret.jpg" alt="Sumber Maju vs New Kampret">
+      <img src="gambar sumber maju vs new kampret.jpg" alt="Sumber Maju vs PB New Kampret" onclick="openLightbox(this)">
       <p>PB Sumber Maju vs PB New Kampret</p>
     </div>
     <div class="gallery-item">
-      <img src="gambar sumber maju vs satelit nusantara.jpg" alt="Sumber Maju vs Satelit Nusantara">
+      <img src="gambar sumber maju vs satelit nusantara.jpg" alt="Sumber Maju vs PB Satelit Nusantara" onclick="openLightbox(this)">
       <p>PB Sumber Maju vs PB Satelit Nusantara</p>
     </div>
     <div class="gallery-item">
-      <img src="gambar sumber maju vs tunas sikatan.jpg" alt="Sumber Maju vs Tunas Sikatan">
+      <img src="gambar sumber maju vs tunas sikatan.jpg" alt="Sumber Maju vs PB Tunas Sikatan" onclick="openLightbox(this)">
       <p>PB Sumber Maju vs PB Tunas Sikatan</p>
     </div>
   </div>
 </section>
 
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+  <p id="lightbox-caption"></p>
+</div>
+
+
     <section id="contact">
         <h2>Contact Us</h2>
+        <p>Tiktok: <a href="https://www.tiktok.com/@pb_sumbermaju?_t=ZS-8zIOW7zd19T&_r=1">@pb_sumbermaju</a></p>
         <p>Instagram:<a href="https://www.instagram.com/pb_sumbermaju?igsh=bm8xajdvMjVtYjF4">@pb_sumbermaju</a></p>
         <p>Telepon: +62 85 943 730 983</p>
         <p>Alamat: Nglawak, Bedahlawak, Kec. Tembelang, Kab. Jombang</p>
@@ -79,6 +105,6 @@
         <p>&copy; 2025 Sumber Maju Badminton Club. All rights reserved.</p>
     </footer>
 
-    
+    <script src="JS/script.js"></script>
 </body>
 </html>
