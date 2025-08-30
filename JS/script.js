@@ -22,11 +22,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-function scrollGallery(direction) {
-  const row = document.getElementById("galleryRow");
-  const scrollAmount = 320; // lebar 1 item + gap
-  row.scrollBy({
-    left: direction * scrollAmount,
-    behavior: "smooth"
-  });
+function openLightbox(imgElement) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const caption = document.getElementById("lightbox-caption");
+
+  lightbox.style.display = "block";
+  lightboxImg.src = imgElement.src;
+  caption.textContent = imgElement.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
 }
